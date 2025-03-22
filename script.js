@@ -1,5 +1,9 @@
 let display = document.getElementById('display');
 
+function backspace() {
+    display.value = display.value.slice(0, -1);
+}
+
 function appendToDisplay(value) {
     display.value += value;
 }
